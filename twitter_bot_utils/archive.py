@@ -26,7 +26,7 @@ def read_csv(directory):
     else:
         csvfile = directory
 
-    with open(csvfile, 'r') as f:
+    with open(csvfile, 'r', encoding='utf-8') as f:
         for tweet in csv.DictReader(f):
 
             try:
